@@ -27,8 +27,13 @@ jobs:
       - name: Instalarr dependências
         run: |
           python -m pip install --upgrade pip
-          pip install pytest
+          pip install pytest pylint
 
       # 4 - Executar os testes usando pytest
       - name: Executar tests
         run: pytest -v
+
+      # 5 - Executar o oylint
+
+      - name : Executar pylint
+        run: pylint .
