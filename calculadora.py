@@ -14,11 +14,3 @@ class Calculadora:
             raise ValueError("Não é possível dividir por zero")
         return a / b
 
-
-if __name__ == "__main__":
-    calc = Calculadora()
-
-    print("Soma:", calc.soma(10, 5))
-    print("Subtração:", calc.subtracao(10, 5))
-    print("Multiplicação:", calc.multiplicacao(10, 5))
-    print("Divisão:", calc.divisao(10, 5))
